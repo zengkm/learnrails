@@ -8,6 +8,8 @@
   <dd><%= @page.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:content) %>:</strong></dt>
   <dd><%= @page.content %></dd>
+ <dt><strong><%= model_class.human_attribute_name(:image) %>:</strong></dt>
+  <dd><img class="media-object" src="<%=@page.image_url%>" alt="Image"></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),
